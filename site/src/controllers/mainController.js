@@ -14,7 +14,7 @@ const controller ={
         })
         .then(producto=>{
            
-         
+           
             res.render('home/home',{producto,toThousand})
               
         })

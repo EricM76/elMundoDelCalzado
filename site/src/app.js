@@ -18,6 +18,8 @@ const productRouter = require('./routes/products');
 const adminRouter = require('./routes/admin');
 const informacionRouter = require('./routes/extras/information');
 
+const cartRouter = require('./routes/cart');
+
 
 
 const app = express();
@@ -48,6 +50,8 @@ app.use('/',indexRouter);
 app.use('/products',productRouter);
 app.use('/user',userRouter);
 app.use('/admin',adminRouter);
+
+app.use('/cart',cartRouter);
 
 
 /**************************EXTRAS*********************************** */

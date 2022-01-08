@@ -38,6 +38,12 @@ module.exports = {
         },
         onDelete: "cascade",
       },
+      cantidad : {
+        type : Sequelize.INTEGER,
+      },
+      talles : {
+        type : Sequelize.STRING,
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
